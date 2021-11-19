@@ -47,6 +47,6 @@ def animation(i):
         
 
 
-animation1 = FuncAnimation(fig, func = animation, interval = 1, blit=False)
+animation1 = FuncAnimation(fig, func = animation, frames = t,interval = 1, blit=False)
 
 plt.show()

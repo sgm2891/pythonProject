@@ -6,7 +6,7 @@ import math
 fig, ax = plt.subplots()
 ax.scatter([0],[0], color = 'b')
 
-angle = -1
+angle = -0.5
 a_vel = 0
 a_acc = 0
 

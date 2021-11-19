@@ -43,7 +43,7 @@ def add(a, b):
 
 
 # ax^2 + bx + c
-def QuadraticFormula(a,b,c): 
+def quadraticFormula(a,b,c): 
     
     answer1 = (-b + (b**2 - 4*a*c)**0.5)/(2*a)
     answer2 = (-b - (b**2 - 4*a*c)**0.5)/(2*a)
@@ -71,6 +71,7 @@ def name(list_input):
 '''
 
 def sum_arg(*args):
+    
     sum = 0
     for i in args:
         sum += i
@@ -91,7 +92,8 @@ def sum_list(list_):
 
 일부 교환학생 또는 외부인사가 있을 수 있지만 대부분은 연세대학교 학생일 것이다.
 
-그렇다면 매번 연세대학교 학생임을 기입하는 것 보단 기본값을 연세대학교 학생이라고 설정하면 번거로움을 줄일 수 있을 것이다.
+그렇다면 매번 연세대학교 학생임을 기입하는 것 보단 기본값을 연세대학교 학생이라고 설정하면 
+번거로움을 줄일 수 있을 것이다.
 
 아래의 예시를 보고 어떻게 사용하는지 알아보자.
 '''
@@ -126,6 +128,7 @@ def sampleFunc(a,b=1,c,d=2):
 def sampleFunc(a = 1, b):
     실행문...
 
+
 과 같은 형태는 불가능하다.
 '''
 
@@ -139,3 +142,7 @@ def whatsThis(n): #n 은 자연수
         return 1
     else:
         return whatsThis(n-1) + whatsThis(n-2)
+
+for i in range(1,11):
+    a = whatsThis(i)
+    print(whatsThis(i))
